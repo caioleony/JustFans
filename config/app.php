@@ -14,15 +14,15 @@ return [
     */
 
     'site' => [
-        'name' => env('APP_NAME', 'JustFans'),
+        'name' => env('APP_NAME', 'SecretFans'),
         'slogan' => env('APP_SLOGAN', 'Premium creators sass social media platform.'),
         'description' => env('APP_DESCRIPTION', 'JustFans is a premium creators sass social media platform.'),
         'light_logo' => '/img/logo-black.png',
         'dark_logo' => '/img/logo-white.png',
         'favicon' => '/img/rounded-logo-gradient.svg',
-        'currency_code' => 'USD',
-        'currency_symbol' => '$',
-        'default_site_language' => 'en',
+        'currency_code' => 'BRL',
+        'currency_symbol' => 'R$',
+        'default_site_language' => 'pt',
         'allow_pwa_installs' => false,
     ],
 
@@ -38,7 +38,7 @@ return [
     ],
 
     'homepage' => [
-      'homepage_type' => 'landing',
+        'homepage_type' => 'landing',
     ],
 
     'media' => [

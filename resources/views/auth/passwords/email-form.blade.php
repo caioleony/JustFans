@@ -1,7 +1,7 @@
 <form method="POST" action="{{ route('password.email') }}">
     @csrf
     <div class="form-group ">
-        <label for="email" class=" col-form-label ">{{ __('E-Mail Address') }}</label>
+        <label for="email" class=" col-form-label ">E-mail</label>
         <div class="">
             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" autofocus>
             @error('email')
@@ -14,7 +14,7 @@
     <div class="form-group row mb-0">
         <div class="col">
             <button type="submit" class="btn btn-grow btn-lg btn-primary bg-gradient-primary btn-block">
-                {{ __('Send Password Reset Link') }}
+                Recuperar senha
             </button>
         </div>
     </div>
@@ -22,11 +22,11 @@
 <hr>
 <div class=" text-center">
     <p class="mb-4">
-        {{__("Don't have an account?")}}
+        Não possui uma conta?
         @if(isset($mode) && $mode == 'ajax')
-            <a href="javascript:void(0);" onclick="LoginModal.changeActiveTab('register')" class="text-primary text-gradient font-weight-bold">{{__('Sign up')}}</a>
+        <a href="javascript:void(0);" onclick="LoginModal.changeActiveTab('register')" class="text-primary text-gradient font-weight-bold">Criar uma conta</a>
         @else
-            <a href="{{route('register')}}" class="text-primary text-gradient font-weight-bold">{{__('Sign up')}}</a>
+        <a href="{{route('register')}}" class="text-primary text-gradient font-weight-bold">Criar uma conta</a>
         @endif
     </p>
 </div>
