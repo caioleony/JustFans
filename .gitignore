@@ -20,3 +20,4 @@ app/cloudfront/*
 # public/sitemap.xml
 public_key.pem
 private_key.pem
+.DS_Store
